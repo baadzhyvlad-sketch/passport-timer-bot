@@ -1,6 +1,7 @@
 import logging
 import datetime
 import time
+import web  # щоб Flask сервер запустився і тримав інстанс живим
 from apscheduler.schedulers.background import BackgroundScheduler
 from telegram import Bot
 import pytz

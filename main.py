@@ -62,7 +62,5 @@ send_update()
 logger.info("Бот запущений. Очікування...")
 
 # === Підтримка роботи
-import web  # ⬅️ додай ось сюди, перед циклом while
-
-while True:
-    time.sleep(60)
+import web
+web.keep_alive()

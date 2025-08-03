@@ -64,3 +64,17 @@ logger.info("Бот запущений. Очікування...")
 # === Підтримка роботи
 import web
 web.keep_alive()
+from flask import Flask
+import threading
+import os
+def run():
+    app = Flask(__name__)
+
+    @app.route('/')
+    def home():
+        return "Bot is running"
+
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
+
+t = threading.Thread(target=run)
+t.start()

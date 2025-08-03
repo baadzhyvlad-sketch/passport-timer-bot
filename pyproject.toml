@@ -1,12 +1,13 @@
 [project]
-name = "python-template"
+name = "passport-timer-bot"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Vlad <your@email.com>"]
 requires-python = ">=3.11"
+
 dependencies = [
-  "apscheduler",
   "flask",
+  "apscheduler",
   "python-telegram-bot",
   "pytz"
 ]
